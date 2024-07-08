@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .bg-custom-light {
+    background: radial-gradient(36.51% 36.51% at 50% 108.51%, #dbf3ff 0%, #ffffff 100%),
+      var(--Color-bg-background-primary, #ffffff);
+  }
+
+  .dark .bg-custom-dark {
+    background: radial-gradient(36.51% 36.51% at 50% 108.51%, #046 0%, #1a202c 100%),
+      var(--Color-bg-background-primary, #1a202c);
+  }
+}
